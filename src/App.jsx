@@ -22,10 +22,10 @@ const DATA = {
   role: "Fresh Graduate — Informatika",
   tagline:
     "Saya membangun aplikasi web yang cepat, bersih, dan berfokus pada pengalaman pengguna.",
-  email: "najwan@example.com",
+  email: "najwanzaky21@gmail.com",
   socials: {
     github: "https://github.com/najwanzakyahmad",
-    linkedin: "https://linkedin.com/in/your-linkedin",
+    linkedin: "https://linkedin.com/in/najwan-zaky-ahmad/",
   },
   skills: [
     "React",
@@ -39,33 +39,33 @@ const DATA = {
   ],
   projects: [
     {
-      title: "WMS Dashboard",
-      desc: "Dashboard admin untuk shuttle/travel: filter gudang, event calendar, dan HPP calculator.",
-      tags: ["React", "Laravel", "MySQL", "FullCalendar"],
+      title: "Web Internal Jubelo",
+      desc: "Aplikasi Jubelo Internal System mengelola anggota, klien, dashboard, event calender, dan perhitungan HPP untuk mendukung efisiensi dan keputusan bisnis.",
+      tags: ["Vue", "Tailwind", "Laravel", "MySQL"],
       link: "#",
     },
     {
-      title: "Katana Tech Site",
-      desc: "Landing page dan CMS ringan untuk company profile Katana Tech Solutions.",
-      tags: ["Next.js", "Tailwind", "Markdown"],
-      link: "#",
-    },
-    {
-      title: "Akreditasi Helper",
+      title: "SIAPS - Penyusunan Akreditasi Program Studi Politeknik Negeri Bandung",
       desc: "Aplikasi pendukung penyusunan laporan akreditasi: import dari Google Sheets & Drive.",
-      tags: ["Vue", "Laravel", "Google API"],
+      tags: ["Reeact", "Laravel", "MongoDB", "Google API"],
+      link: "#",
+    },
+    {
+      title: "Aplikasi Desa Digital",
+      desc: "Aplikasi Desa Digital mempermudah pengelolaan data penduduk, bantuan sosial, acara, dan pembangunan desa secara efisien dan modern.",
+      tags: ["Vue", "Laravel", "MySQL", "Tailwind"],
       link: "#",
     },
   ],
   timeline: [
     {
       when: "2025",
-      title: "Fresh Graduate — S1 Informatika",
+      title: "Fresh Graduate — D3 Informatika",
       body: "Fokus pada web development: React/Vue, REST API, dan integrasi peta/Drive.",
     },
     {
       when: "2024",
-      title: "Intern — Web Developer",
+      title: "Intern — Full Stack Web Developer",
       body: "Membangun fitur role-based access, dashboard KPI, dan optimasi query.",
     },
   ],
