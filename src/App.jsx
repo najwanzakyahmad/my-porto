@@ -31,6 +31,7 @@ const DATA = {
     "React",
     "TypeScript",
     "Vue",
+    "Nuxt",
     "Laravel",
     "Tailwind CSS",
     "Node.js",
@@ -55,6 +56,12 @@ const DATA = {
       desc: "Aplikasi Desa Digital mempermudah pengelolaan data penduduk, bantuan sosial, acara, dan pembangunan desa secara efisien dan modern.",
       tags: ["Vue", "Laravel", "MySQL", "Tailwind"],
       link: "#",
+    },
+    {
+      title: "Aplikasi CRUD karyawan",
+      desc: "Aplikasi untuk mempermudah pengelolaan data karyawan. Untuk login (username : admin, password : password )",
+      tags: ["Nuxt", "Laravel", "MySQL", "Tailwind"],
+      link: "https://pegawai-fe-seven.vercel.app/login",
     },
   ],
   timeline: [
