@@ -63,6 +63,12 @@ const DATA = {
       tags: ["Nuxt", "Laravel", "MySQL", "Tailwind"],
       link: "https://pegawai-fe-seven.vercel.app/login",
     },
+    {
+      title: "Aplikasi Pengolahan Teks",
+      desc: "Aplikasi untuk mengubah, mencari, dan menghitung kata",
+      tags: ["HTML", "Flask"],
+      link: "https://pengolahan-teks.vercel.app/",
+    },
   ],
   timeline: [
     {
