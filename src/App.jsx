@@ -19,7 +19,7 @@ import { Code, Github, Linkedin, Mail, Send, Sparkles, MousePointerClick } from 
 
 const DATA = {
   name: "Najwan Zaky",
-  role: "Fresh Graduate — Informatika",
+  role: "Fullstack Web Developer",
   tagline:
     "Saya membangun aplikasi web yang cepat, bersih, dan berfokus pada pengalaman pengguna.",
   email: "najwanzaky21@gmail.com",
@@ -32,10 +32,13 @@ const DATA = {
     "TypeScript",
     "Vue",
     "Nuxt",
+    "GO",
     "Laravel",
     "Tailwind CSS",
     "Node.js",
     "MySQL",
+    "PostgreSQL",
+    "MongoDB",
     "REST API",
   ],
   projects: [
@@ -69,6 +72,12 @@ const DATA = {
       tags: ["HTML", "Flask"],
       link: "https://pengolahan-teks.vercel.app/",
     },
+    {
+      title: "Multi-Branch ERP & POS System (MCC)",
+      desc: "Aplikasi Enterprise Resource Planning (ERP) komprehensif untuk manajemen operasional multi-cabang. Mengintegrasikan modul Point of Sales (POS), manajemen inventori cerdas dengan peringatan stok otomatis, purchasing, hingga pelacakan tiket Service Center dalam satu dashboard terpusat.",
+      tags: ["NuxtJS", "Laravel", "PostgreSQL", "Tailwind CSS"],
+      link: "https://mcc-frontend-seven.vercel.app/",
+    }
   ],
   timeline: [
     {
