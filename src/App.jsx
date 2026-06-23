@@ -1,7 +1,6 @@
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Stars, Float, Html } from "@react-three/drei";
-import { motion } from "framer-motion";
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import { Code, Github, Linkedin, Mail, Send, Sparkles, MousePointerClick } from "lucide-react";
 
 /**
@@ -80,14 +79,20 @@ const DATA = {
     }
   ],
   timeline: [
+    
     {
-      when: "2025",
+      when: "Dec 2025 - Jun 2026",
+      title: "Intern at PT. Tabel Data Informatika — Full Stack Web Developer",
+      body: "Responsible for building and maintaining web applications using React, Golang, and PostgreSQL, including RESTful API development, Keycloak integration, RBAC implementation and database optimization.",
+    },
+    {
+      when: "Aug 2025",
       title: "Fresh Graduate — D3 Informatika",
       body: "Fokus pada web development: React/Vue, REST API, dan integrasi peta/Drive.",
     },
     {
-      when: "2024",
-      title: "Intern — Full Stack Web Developer",
+      when: "Jun 2024 - Oct 2024",
+      title: "Intern at PT. Lokakarya Inovasi Bersama (Jubelo) — Full Stack Web Developer",
       body: "Membangun fitur role-based access, dashboard KPI, dan optimasi query.",
     },
   ],
@@ -279,27 +284,43 @@ function Timeline() {
 }
 
 function Contact() {
-  const [sent, setSent] = useState(false);
   return (
     <section id="contact" className="mx-auto max-w-3xl px-4 py-16">
       <h2 className="text-2xl md:text-3xl font-semibold text-zinc-900 dark:text-white">Contact</h2>
       <p className="mt-2 text-zinc-600 dark:text-zinc-300">Terbuka untuk full-time/contract. Yuk ngobrol!</p>
+      
+      {/* Ganti GANTI_DENGAN_KODE_FORMSPREE dengan endpoint yang Anda dapatkan */}
       <form
-        onSubmit={(e) => {
-          e.preventDefault();
-          setSent(true);
-        }}
+        action="https://formspree.io/f/xykqzkvb"
+        method="POST"
         className="mt-6 grid gap-4"
       >
-        <input className="rounded-2xl border border-zinc-300 dark:border-zinc-700 bg-white/80 dark:bg-zinc-900/60 px-4 py-3" placeholder="Nama" required />
-        <input className="rounded-2xl border border-zinc-300 dark:border-zinc-700 bg-white/80 dark:bg-zinc-900/60 px-4 py-3" type="email" placeholder="Email" required />
-        <textarea className="min-h-[120px] rounded-2xl border border-zinc-300 dark:border-zinc-700 bg-white/80 dark:bg-zinc-900/60 px-4 py-3" placeholder="Pesan" required />
-        <button type="submit" className="inline-flex items-center justify-center gap-2 rounded-2xl bg-zinc-900 text-white dark:bg-white dark:text-zinc-900 px-5 py-3 text-sm">
+        {/* Tambahkan atribut 'name' agar data dikenali saat dikirim ke email */}
+        <input 
+          name="nama"
+          className="rounded-2xl border border-zinc-300 dark:border-zinc-700 bg-white/80 dark:bg-zinc-900/60 px-4 py-3" 
+          placeholder="Nama" 
+          required 
+        />
+        <input 
+          name="email"
+          type="email" 
+          className="rounded-2xl border border-zinc-300 dark:border-zinc-700 bg-white/80 dark:bg-zinc-900/60 px-4 py-3" 
+          placeholder="Email" 
+          required 
+        />
+        <textarea 
+          name="pesan"
+          className="min-h-[120px] rounded-2xl border border-zinc-300 dark:border-zinc-700 bg-white/80 dark:bg-zinc-900/60 px-4 py-3" 
+          placeholder="Pesan" 
+          required 
+        />
+        <button 
+          type="submit" 
+          className="inline-flex items-center justify-center gap-2 rounded-2xl bg-zinc-900 text-white dark:bg-white dark:text-zinc-900 px-5 py-3 text-sm"
+        >
           <Send className="h-4 w-4" /> Kirim
         </button>
-        {sent && (
-          <div className="text-sm text-emerald-600 dark:text-emerald-400">Pesan terkirim (dummy). Hubungi langsung: <a className="underline" href={`mailto:${DATA.email}`}>{DATA.email}</a></div>
-        )}
       </form>
     </section>
   );
