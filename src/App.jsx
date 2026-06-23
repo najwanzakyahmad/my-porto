@@ -1,6 +1,7 @@
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Stars, Float, Html } from "@react-three/drei";
-import { useRef } from "react";
+import { motion } from "framer-motion";
+import { useRef, useState } from "react";
 import { Code, Github, Linkedin, Mail, Send, Sparkles, MousePointerClick } from "lucide-react";
 
 /**
